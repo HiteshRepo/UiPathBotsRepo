@@ -1,0 +1,92 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.1": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "": [],
+    ".NETFramework,Version=v4.6.1": [
+      "UiPath.Excel.Activities >= 2.7.2-beta.604620 <= 2.7.2-beta.604620",
+      "UiPath.Mail.Activities >= 1.7.2-beta.604622 <= 1.7.2-beta.604622",
+      "UiPath.System.Activities >= 19.10.1-beta.604616 <= 19.10.1-beta.604616",
+      "UiPath.UIAutomation.Activities >= 19.10.1-beta.604613 <= 19.10.1-beta.604613"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Hitesh Pattanayak\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "restore": {
+      "projectUniqueName": "Bot4_RealEstateScraping",
+      "projectName": "Bot4_RealEstateScraping",
+      "projectPath": "D:\\Courses\\UIPath\\Downloads\\Download 7 Bots _ Udemy-20200315T083634Z-001\\Download 7 Bots _ Udemy\\Bot4_RealEstateScraping\\.local",
+      "packagesPath": "C:\\Users\\Hitesh Pattanayak\\.nuget\\packages\\",
+      "outputPath": "D:\\Courses\\UIPath\\Downloads\\Download 7 Bots _ Udemy-20200315T083634Z-001\\Download 7 Bots _ Udemy\\Bot4_RealEstateScraping\\.local"
+    },
+    "frameworks": {
+      "net461": {
+        "dependencies": {
+          "UiPath.Excel.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[2.7.2-beta.604620, 2.7.2-beta.604620]"
+          },
+          "UiPath.Mail.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.7.2-beta.604622, 1.7.2-beta.604622]"
+          },
+          "UiPath.System.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[19.10.1-beta.604616, 19.10.1-beta.604616]"
+          },
+          "UiPath.UIAutomation.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[19.10.1-beta.604613, 19.10.1-beta.604613]"
+          }
+        }
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1102",
+      "level": "Error",
+      "message": "Unable to find package UiPath.UIAutomation.Activities with version (= 19.10.1-beta.604613)\r\n  - Found 27 version(s) in https://www.myget.org/F/workflow/ [ Nearest version: 19.10.1 ]\r\n  - Found 27 version(s) in Official [ Nearest version: 19.10.1 ]\r\n  - Found 2 version(s) in https://cloud.uipath.com/selfzfsgoyv/SelfDefault/nuget/activities [ Nearest version: 19.8.0-ce ]\r\n  - Found 1 version(s) in C:\\Users\\Hitesh Pattanayak\\AppData\\Local\\UiPath\\app-20.3.0-beta0084\\.\\Packages [ Nearest version: 20.3.0-alpha ]\r\n  - Found 1 version(s) in Local [ Nearest version: 20.3.0-alpha ]\r\n  - Found 0 version(s) in https://api.nuget.org/v3/index.json\r\n  - Found 0 version(s) in nuget.org\r\n  - Found 0 version(s) in https://gallery.uipath.com/api/v2\r\n  - Found 0 version(s) in Go!",
+      "libraryId": "UiPath.UIAutomation.Activities",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.1"
+      ]
+    },
+    {
+      "code": "NU1102",
+      "level": "Error",
+      "message": "Unable to find package UiPath.System.Activities with version (= 19.10.1-beta.604616)\r\n  - Found 18 version(s) in https://www.myget.org/F/workflow/ [ Nearest version: 19.10.1 ]\r\n  - Found 18 version(s) in Official [ Nearest version: 19.10.1 ]\r\n  - Found 2 version(s) in https://cloud.uipath.com/selfzfsgoyv/SelfDefault/nuget/activities [ Nearest version: 19.8.0 ]\r\n  - Found 1 version(s) in C:\\Users\\Hitesh Pattanayak\\AppData\\Local\\UiPath\\app-20.3.0-beta0084\\.\\Packages [ Nearest version: 20.3.0-preview ]\r\n  - Found 1 version(s) in Local [ Nearest version: 20.3.0-preview ]\r\n  - Found 0 version(s) in https://api.nuget.org/v3/index.json\r\n  - Found 0 version(s) in nuget.org\r\n  - Found 0 version(s) in https://gallery.uipath.com/api/v2\r\n  - Found 0 version(s) in Go!",
+      "libraryId": "UiPath.System.Activities",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.1"
+      ]
+    },
+    {
+      "code": "NU1102",
+      "level": "Error",
+      "message": "Unable to find package UiPath.Mail.Activities with version (= 1.7.2-beta.604622)\r\n  - Found 38 version(s) in https://www.myget.org/F/workflow/ [ Nearest version: 1.7.2 ]\r\n  - Found 38 version(s) in Official [ Nearest version: 1.7.2 ]\r\n  - Found 2 version(s) in https://cloud.uipath.com/selfzfsgoyv/SelfDefault/nuget/activities [ Nearest version: 1.6.0 ]\r\n  - Found 1 version(s) in C:\\Users\\Hitesh Pattanayak\\AppData\\Local\\UiPath\\app-20.3.0-beta0084\\.\\Packages [ Nearest version: 1.8.2-preview ]\r\n  - Found 1 version(s) in Local [ Nearest version: 1.8.2-preview ]\r\n  - Found 0 version(s) in https://api.nuget.org/v3/index.json\r\n  - Found 0 version(s) in nuget.org\r\n  - Found 0 version(s) in https://gallery.uipath.com/api/v2\r\n  - Found 0 version(s) in Go!",
+      "libraryId": "UiPath.Mail.Activities",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.1"
+      ]
+    },
+    {
+      "code": "NU1102",
+      "level": "Error",
+      "message": "Unable to find package UiPath.Excel.Activities with version (= 2.7.2-beta.604620)\r\n  - Found 42 version(s) in https://www.myget.org/F/workflow/ [ Nearest version: 2.7.2 ]\r\n  - Found 42 version(s) in Official [ Nearest version: 2.7.2 ]\r\n  - Found 2 version(s) in https://cloud.uipath.com/selfzfsgoyv/SelfDefault/nuget/activities [ Nearest version: 2.6.3 ]\r\n  - Found 1 version(s) in C:\\Users\\Hitesh Pattanayak\\AppData\\Local\\UiPath\\app-20.3.0-beta0084\\.\\Packages [ Nearest version: 2.8.2-preview ]\r\n  - Found 1 version(s) in Local [ Nearest version: 2.8.2-preview ]\r\n  - Found 0 version(s) in https://api.nuget.org/v3/index.json\r\n  - Found 0 version(s) in nuget.org\r\n  - Found 0 version(s) in https://gallery.uipath.com/api/v2\r\n  - Found 0 version(s) in Go!",
+      "libraryId": "UiPath.Excel.Activities",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="713.6,4888" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence sap:VirtualizedContainerService.HintSize="693.6,4828" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="652,4735.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Variables>
+        <Variable x:TypeArguments="x:String" Name="myPassword" />
+        <Variable x:TypeArguments="scg:ICollection(x:Object)" Name="outputReport" />
+      </TryCatch.Variables>
+      <TryCatch.Try>
+        <Sequence sap:VirtualizedContainerService.HintSize="615.2,2504" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="scg:List(snm:MailMessage)" Name="messages" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign sap:VirtualizedContainerService.HintSize="573.6,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+            <Assign.To>
+              <OutArgument x:TypeArguments="scg:ICollection(x:Object)">[outputReport]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="scg:ICollection(x:Object)">[new List(of object)]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <ui:GetPassword DisplayName="Private: Get Password" sap:VirtualizedContainerService.HintSize="573.6,22.4" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArC8yvdIsEkSSuJcMQJzWrwAAAAACAAAAAAAQZgAAAAEAACAAAACIFcDjTdE8pF/Xg+P7PE7By48xHwxm3yjEKGV2/fF6fgAAAAAOgAAAAAIAACAAAAAoyoDlMGzsjBIwkmxDmKMnGGtu8hx7mCEC0I0z/O6KVyABAAD+qxliDUI0/+0BtjIQPHyA9J6MiHGrrr8lXLbBYTFG0nHnIvXlThyissU+OyZkXtwaq/CYgngSaY4mk/hgoc+ue2gSKeRHVY98GlLHgBHjioxzFvWAMlLlVU9B1wq8GWeY9xKtituXP+dkVfGVbl8GN+RV7LoBZdrjug0gBE204FThG5lWMV9n+ulHYRdHp8XBT87rvUz7G944tejlVFXInBD0UPPe2W8GtRs/uHniGJVLs03EX3qjXKiD9Wt7gIH1RQbNBElGW7J3rtmZQGzYw362AcKTMx6VoECRe7xl9Dz3gevwgkczzrzqEQkTSEWwTxyNas3aqpSRPyuN+WB2kYxFXVwAS4z1tdoM94tVd4veOVxSIAFpgGM7yetUpqdAAAAASNpxuafSgbyQPxB1en1aJ041MQhke/aqWjaOKnDLW9EA8CLyYY5PO/KzKE+teOrLfu+Mrit5lk//mNOzqPfmAA==" Result="[myPassword]" />
+          <ui:GetIMAPMailMessages TimeoutMS="{x:Null}" DeleteMessages="False" DisplayName="Get IMAP Mail Messages" Email="your email here" EnableSSL="True" sap:VirtualizedContainerService.HintSize="573.6,22.4" sap2010:WorkflowViewState.IdRef="GetIMAPMailMessages_1" MailFolder="Invoices" MarkAsRead="False" Messages="[messages]" OnlyUnreadMessages="False" Password="[myPassword]" Port="993" SecureConnection="Auto" Server="imap.gmail.com" Top="10" />
+          <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="573.6,2186.4" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[messages]">
+            <ui:ForEach.Body>
+              <ActivityAction x:TypeArguments="snm:MailMessage">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="snm:MailMessage" Name="mail" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="538.4,2052" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="mailName" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="496.8,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[mailName]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[mail.Subject]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="496.8,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[mailName]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[mailName.Replace(":", "")]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[mail.From.Address]" sap:VirtualizedContainerService.HintSize="496.8,1759.2" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                    <Sequence x:Key="leon@futurerpa.com" sap:VirtualizedContainerService.HintSize="375.2,699.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:SaveMail DisplayName="Save Mail Message" FilePath="[&quot;FutureRPA\&quot; + mailName + &quot;.eml&quot;]" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="SaveMail_1" MailMessage="[mail]" />
+                      <AddToCollection x:TypeArguments="x:Object" Collection="[outputReport]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="AddToCollection`1_3" Item="[&quot;Email: &quot;+ mailName]" />
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Successfully saved mail: &quot; + mail.Subject]" />
+                      <ui:SaveMailAttachments Attachments="{x:Null}" DisplayName="Save Attachments" FolderPath="FutureRPA\Attatchments" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="SaveMailAttachments_2" Message="[mail]" />
+                      <AddToCollection x:TypeArguments="x:Object" Collection="[outputReport]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="AddToCollection`1_4" Item="[&quot;Attatchement: &quot;+mailName]" />
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Successfully saved attatchment: &quot; + mail.Subject]" />
+                    </Sequence>
+                    <Sequence x:Key="leon@specialsnearme.co.za" sap:VirtualizedContainerService.HintSize="375.2,699.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:SaveMail DisplayName="Save Mail Message" FilePath="[&quot;SpecialsApp\&quot; + mailName + &quot;.eml&quot;]" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="SaveMail_2" MailMessage="[mail]" />
+                      <AddToCollection x:TypeArguments="x:Object" Collection="[outputReport]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="AddToCollection`1_2" Item="[&quot;Email: &quot;+ mailName]" />
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Successfully saved mail: &quot; + mail.Subject]" />
+                      <ui:SaveMailAttachments Attachments="{x:Null}" DisplayName="Save Attachments" FolderPath="SpecialsApp\Attatchments" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="SaveMailAttachments_1" Message="[mail]" />
+                      <AddToCollection x:TypeArguments="x:Object" Collection="[outputReport]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="AddToCollection`1_5" Item="[&quot;Attatchement: &quot;+mailName]" />
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Successfully saved attatchment: &quot; + mail.Subject]" />
+                    </Sequence>
+                  </Switch>
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEach.Body>
+          </ui:ForEach>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="618.4,809.6" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence sap:VirtualizedContainerService.HintSize="375.2,739.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="EmailErrorTemplate" />
+                <Variable x:TypeArguments="ui:Image" Name="myScreenshot" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Error" Message="[exception.Message]" />
+              <ui:TakeScreenshot WaitBefore="{x:Null}" ContinueOnError="True" DisplayName="Take Screenshot" sap:VirtualizedContainerService.HintSize="333.6,68.8" sap2010:WorkflowViewState.IdRef="TakeScreenshot_1" Screenshot="[myScreenshot]">
+                <ui:TakeScreenshot.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" WaitForReady="INTERACTIVE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:TakeScreenshot.Target>
+              </ui:TakeScreenshot>
+              <ui:SaveImage DisplayName="Save Image" FileName="errorscreenshot.png" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="SaveImage_1" Image="[myScreenshot]" />
+              <ui:ReadTextFile Content="[EmailErrorTemplate]" DisplayName="Read Text File" FileName="EmailErrorTemplate.txt" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+              <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" TimeoutMS="{x:Null}" Body="[string.Format(EmailErrorTemplate, Now, exception.Message)]" DisplayName="Send SMTP Mail Message" Email="your email" EnableSSL="True" From="your email" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Name="Email Auto Robot" Password="[myPassword]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Automation Report: Error" To="your email">
+                <ui:SendMail.Files>
+                  <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                    <InArgument x:TypeArguments="x:String">errorscreenshot.png</InArgument>
+                  </scg:List>
+                </ui:SendMail.Files>
+              </ui:SendMail>
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+      <TryCatch.Finally>
+        <Sequence sap:VirtualizedContainerService.HintSize="452,1168.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" Name="completeReport" />
+            <Variable x:TypeArguments="x:String" Name="EmailSuccessTemplate" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:WriteTextFile DisplayName="Write Text File" FileName="Report" sap:VirtualizedContainerService.HintSize="410.4,134.4" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[string.Empty]" />
+          <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="410.4,361.6" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[outputReport]">
+            <ui:ForEach.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,227.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:AppendLine DisplayName="Append Line" FileName="Report" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="AppendLine_3" Text="[item.ToString]" />
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEach.Body>
+          </ui:ForEach>
+          <ui:ReadTextFile Content="[completeReport]" DisplayName="Read Text File" FileName="Report" sap:VirtualizedContainerService.HintSize="410.4,85.6" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" />
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="410.4,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[completeReport]" />
+          <ui:ReadTextFile Content="[EmailSuccessTemplate]" DisplayName="Read Text File" FileName="EmailSuccessTemplate.txt" sap:VirtualizedContainerService.HintSize="410.4,85.6" sap2010:WorkflowViewState.IdRef="ReadTextFile_3" />
+          <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" TimeoutMS="{x:Null}" Body="[string.Format(EmailSuccessTemplate, Now, completeReport)]" DisplayName="Send SMTP Mail Message" Email="your email" EnableSSL="True" From="your email" sap:VirtualizedContainerService.HintSize="410.4,146.4" sap2010:WorkflowViewState.IdRef="SendMail_2" IsBodyHtml="False" Name="Robot" Password="[myPassword]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Automation Report" To="your email">
+            <ui:SendMail.Files>
+              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+            </ui:SendMail.Files>
+          </ui:SendMail>
+        </Sequence>
+      </TryCatch.Finally>
+    </TryCatch>
+  </Sequence>
+</Activity>
